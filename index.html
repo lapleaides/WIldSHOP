@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WILD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header-inner">
+            <a href="#" class="logo">WILD</a>
+
+            <div class="header-right">
+                <div class="cart">
+                    Корзина
+                    <span id="cart-count">0</span>
+                </div>
+
+                <button class="theme-button" id="theme-button">Тёмная тема</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <div class="hero-content">
+                <p class="hero-small">Необычные домашние животные</p>
+
+                <h1>Найди своего дикого друга</h1>
+
+                <p class="hero-text">
+                    Лисы, фенеки и другие интересные красавцы.
+                </p>
+
+                <a href="#animals" class="hero-button">Подробнее</a>
+            </div>
+        </section>
+
+        <section class="animals" id="animals">
+
+            <div class="section-heading">
+                <p class="section-small">Наши животные</p>
+                <h2>Выбирай!</h2>
+            </div>
+
+            <div class="animal-grid">
+
+                <article class="animal-card">
+Ы
+                    <img src="https://images.unsplash.com/photo-1727887746389-c85452dfa8cf?auto=format&fit=crop&w=900&q=80"
+                        alt="Лисица">
+
+                    <div class="animal-info">
+
+                        <div>
+                            <h3>Лиса Алиса</h3>
+                            <p>Рыжая, хитрая и вечно делает вид что ничего не произошло.</p>
+                        </div>
+
+                        <div class="price">85 000 ₽</div>
+
+                        <div class="card-buttons">
+                            <button class="buy-button">В корзину</button>
+
+                            <button class="minus-button">−</button>
+
+                            <span class="item-count">0</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <article class="animal-card">
+
+                    <img src="https://images.unsplash.com/photo-1532341822085-6f3386f2bfa3?auto=format&fit=crop&w=900&q=80"
+                        alt="Фенек">
+
+                    <div class="animal-info">
+
+                        <div>
+                            <h3>Фенек Борис</h3>
+                            <p>Маленький пустынный лис и небольшой проказник.</p>
+                        </div>
+
+                        <div class="price">120 000 ₽</div>
+
+                        <div class="card-buttons">
+                            <button class="buy-button">В корзину</button>
+
+                            <button class="minus-button">−</button>
+
+                            <span class="item-count">0</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <article class="animal-card">
+
+                    <img src="https://images.unsplash.com/photo-1685491107139-7d7f4f17b3eb?auto=format&fit=crop&w=900&q=80"
+                        alt="Енот">
+
+                    <div class="animal-info">
+
+                        <div>
+                            <h3>Енот Геннадий</h3>
+                            <p>Любит еду, приключения и проверять содержимое всех мусорок.</p>
+                        </div>
+
+                        <div class="price">65 000 ₽</div>
+
+                        <div class="card-buttons">
+                            <button class="buy-button">В корзину</button>
+
+                            <button class="minus-button">−</button>
+
+                            <span class="item-count">0</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <section class="animal-test">
+
+            <div class="test-content">
+
+                <p class="section-small">Не можешь выбрать?</p>
+
+                <h2>Узнай, какой микрочел подходит</h2>
+
+                <p id="animal-result">
+                    Нажми на кнопку, и судьба решит всё за тебя.
+                </p>
+
+                <button id="random-button">Выбрать зверя</button>
+
+            </div>
+
+        </section>
+
+        <section class="order-section">
+
+            <div class="order-title">
+
+                <p class="section-small">Заявка</p>
+
+                <h2>Хочу забрать зверя</h2>
+
+                <p>
+                    Оставь данные, и наш очень серьёзный менеджер свяжется с тобой.
+                </p>
+
+            </div>
+
+            <form class="order-form" id="order-form">
+
+                <div class="form-group">
+                    <label for="name">Имя</label>
+                    <input type="text" id="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="surname">фамилия</label>
+                    <input type="text" id="surname" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Электронная почта</label>
+                    <input type="email" id="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Телефон</label>
+                    <input type="tel" id="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Адрес</label>
+                    <input type="text" id="address" required>
+                </div>
+
+                <button type="submit" class="form-button">Отправить заявку</button>
+
+                <p id="form-message"></p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="footer-logo">WILD</div>
+
+        <div class="footer-text">
+            <p>дикость@mail.ru</p>
+            <p>Ингушетия</p>
+            <p>© 2026</p>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
